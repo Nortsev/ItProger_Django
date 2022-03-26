@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Главная
+{% endblock %}
+
+
+{% block content %}
+<div class="features">
+    <h1>Заголовок</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem odit itaque, dignissimos, libero rerum autem 
+    quisquam explicabo quam eius deserunt magni cupiditate vero officia? Vero voluptas facilis culpa atque?</p>
+    <a href="{% url 'about' %}" class="btn btn-warning">На страницу про нас</a>
+</div>
+
+{% endblock %}

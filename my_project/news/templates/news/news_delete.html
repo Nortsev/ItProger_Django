@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Удаление статьи
+{% endblock %}
+
+
+{% block content %}
+<div class="features">
+    <h1>Удалить статью?</h1>
+    <form method="post">
+        {% csrf_token %} <br>
+        <button class="btn btn-success" type="submit">Удалить</button>
+        <a href="{% url 'news_home' %}" class="btn btn-success">На главную</a>
+    </form>
+</div>
+
+{% endblock %}
